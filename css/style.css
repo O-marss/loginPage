@@ -7,6 +7,22 @@ body{
     padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+a:visited,
+a:active,
+a{
+    color: #525CEB;
+}
+
 .page-container{
     min-height: 100vh;
     display: flex;
@@ -30,12 +46,35 @@ body{
 
 }
 
+.create-header{
+    font-size: 30px;
+}
+
 .form-control{
     color: #fff;
-    background-color: #1A1A1D;
+    background-color: #28282b;
     border-width: 0 0 1px 0;
 }
 
 .form-control::placeholder{
-    color: #fff;
+    color: #686D76;
+}
+
+#createAccount{
+    background-color: #525CEB;
+    border-color: #525CEB;
+}
+
+
+.form-control:focus{
+    color:#fff;
+    background-color: #28282b71;
+    border-color: #28282b71;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem #525ceb50;
+}
+
+.form-check-input:checked{
+    background-color: #686D76;
+    border-color: #686D76;
 }
