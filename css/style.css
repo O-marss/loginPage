@@ -1,0 +1,41 @@
+body{
+    background-image:url(../images/wallhaven-rr81e7_3840x2160.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.page-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.card-container{
+    background-color: #1A1A1D;
+    width: 85%;
+}
+
+.card-container .row .card-imgs{
+ 
+}
+
+.card-container .row .card-imgs img{
+    width: 100%;
+}
+
+.card-container .row .create-account-card{
+
+}
+
+.form-control{
+    color: #fff;
+    background-color: #1A1A1D;
+    border-width: 0 0 1px 0;
+}
+
+.form-control::placeholder{
+    color: #fff;
+}
