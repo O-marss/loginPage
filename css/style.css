@@ -1,10 +1,10 @@
-body{
-    background-image:url(../images/bg4.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+body {
+  background-image: url(../images/bg4.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -12,101 +12,119 @@ h2,
 h3,
 h4,
 h5,
-h6{
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
 }
 
 a:visited,
 a:active,
-a{
-    color: #525CEB;
+a {
+  color: #525ceb;
 }
 
-.overlay-bg{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: -2;
+.overlay-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -2;
 }
 
-.page-container{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.card-container{
-    background-color: #1A1A1D;
-    width: 85%;
+.card-container {
+  background-color: #1a1a1d;
+  width: 85%;
 }
 
-
-.card-container .row .card-imgs img{
-    width: 100%;
+.card-container .row .card-imgs img {
+  width: 100%;
 }
 
-.create-header{
-    font-size: 1.75rem;
+.create-header {
+  font-size: 1.75rem;
 }
 
-.form-control{
-    color: #fff;
-    background-color: #28282b;
-    border-width: 0 0 1px 0;
+.form-control {
+  color: #fff;
+  background-color: #28282b;
+  border-width: 0 0 1px 0;
 }
 
-.form-control::placeholder{
-    color: #686D76;
+.form-control::placeholder {
+  color: #686d76;
 }
 
-#createAccount{
-    background-color: #525CEB;
-    border-color: #525CEB;
+#createAccount {
+  background-color: #525ceb;
+  border-color: #525ceb;
 }
 
-
-.form-control:focus{
-    color:#fff;
-    background-color: #28282b71;
-    border-color: #28282b71;
-    outline: 0;
-    box-shadow: 0 0 0 .25rem #525ceb50;
+.form-control:focus {
+  color: #fff;
+  background-color: #28282b71;
+  border-color: #28282b71;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #525ceb50;
 }
 
-.form-check-input:checked{
-    background-color: #686D76;
-    border-color: #686D76;
+.form-check-input:checked {
+  background-color: #686d76;
+  border-color: #686d76;
 }
 
-.form-check-label{
-    font-size: 0.9375rem;
+.form-check-label {
+  font-size: 0.9375rem;
 }
 
-a.signature{
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #ffffffc2;
-    z-index: 99;
-    text-decoration: none;
-    padding: 0.625rem;
-    font-family: "Plaster", system-ui;
-    font-size: 1.25rem;
-    cursor: pointer;
-    white-space: pre;
+#displayLogin {
+  font-size: 14px;
+}
+
+#displaySignUp {
+  font-size: 14px;
+}
+
+.account-question {
+  font-size: 14px;
+}
+
+.terms {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form-check-label {
+  font-size: 14px;
+}
+
+a.signature {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffffc2;
+  z-index: 99;
+  text-decoration: none;
+  padding: 18px;
+  font-family: "Plaster", system-ui;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: pre;
   text-align: center;
 }
 
 a.signature:visited,
 a.signature:active,
-a.signature:focus{
-    text-decoration: none;
+a.signature:focus {
+  text-decoration: none;
 }
 
-
-.form-control::-webkit-input-placeholder { 
+/* .form-control::-webkit-input-placeholder { 
    
-}
+} */
