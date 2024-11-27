@@ -26,6 +26,7 @@ function displayLoginCard(){
 
 displaySignUp.addEventListener('click', displaySignUpCard)
 
+displayLogin.addEventListener('click', displayLoginCard)
 
 const signature = document.querySelector('.signature')
 
