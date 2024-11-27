@@ -6,6 +6,28 @@
     .card-container{
         width: 100%;
     }
+
+    .create-header{
+      font-size: 42px;
+      margin-bottom: 20px;
+  }
+
+  .form-check-label{
+    font-size: 16px;
+}
+
+a.signature{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffffc2;
+    z-index: 99;
+    text-decoration: none;
+    padding: 25px;
+    font-family: "Plaster", system-ui;
+    font-size: 30px;
+    cursor: pointer;
+}
   
   }
 

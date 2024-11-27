@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
@@ -14,23 +19,37 @@
   </head>
   <body>
     <div class="page-container py-5">
-      <div class="card-container container p-4 rounded-3">
-        <div class="row gy-5">
+      <div class="card-container container rounded-3 shadow">
+        <div class="row p-4 gy-4 gy-md-0">
           <div class="col-md-6">
-          <div class="card-imgs">
-            <img
-              src="images/wallhaven-rr81e7_3840x4500.png"
-              alt=""
-              class="rounded-3"
-            />
+          <div class="card-imgs position-relative">
+            <a class="signature" href="https://github.com/">O|MARS</a>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner rounded-3">
+                <div class="carousel-item active">
+                  <img src="images/slide9.webp" class="d-block w-100 rounded-3" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide4.webp" class="d-block w-100 rounded-3" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide2.webp" class="d-block w-100 rounded-3" alt="...">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="create-account-card text-light p-md-5">
-            <h1 class="create-header">Create an account</h1>
-            <div class="d-flex gap-2">
+        <div id="createAccountCard" class="col-md-6 d-flex align-items-center d-none">
+          <div class="text-light p-md-5">
+            <h1 class="create-header">Get Started</h1>
+            <div class="d-flex gap-2 mb-md-3">
               <p>Already have an account?</p>
-              <a href="/">Login</a>
+              <a id="displayLogin" href="/">Log in</a>
             </div>
             <form class="row g-3 needs-validation" novalidate>
               <div class="col-md-6">
@@ -40,7 +59,7 @@
                     class="form-control"
                     id="validationCustom01"
                     value=""
-                    placeholder="First Name"
+                    placeholder='First Name'
                     required
                   />
                   <div class="valid-feedback">Looks good!</div>
@@ -94,10 +113,9 @@
                       class="form-check-input"
                       type="checkbox"
                       value=""
-                      id="flexCheckChecked"
-                      checked
+                      id="flexCheckDefault"
                     />
-                    <label class="form-check-label" for="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckDefault">
                       I agree to the <a class="terms">Terms & Conditions</a>
                     </label>
                   </div>
@@ -113,10 +131,70 @@
             </form>
           </div>
         </div>
-          <div class="login-card"></div>
+            <div id="loginCard" class="col-md-6 d-flex align-items-center">
+              <div class="text-light p-md-5">
+                <h1 class="create-header">Welcome Back!</h1>
+                <div class="d-flex gap-2 mb-md-3">
+                  <p>Don't have an account?</p>
+                  <a id="displaySignUp" href="/">Sign up</a>
+                </div>
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <input
+                        type="password"
+                        id="inputPassword5"
+                        class="form-control"
+                        placeholder="Enter your Password"
+                        aria-describedby="passwordHelpBlock"
+                      />
+                      <div id="passwordHelpBlock" class="form-text text-light d-none">
+                        Your password must be 8-20 characters long, contain letters
+                        and numbers, and must not contain spaces, special characters,
+                        or emoji.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Remember Me
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <button class="btn btn-primary w-100" type="submit" id="createAccount">
+                        Login
+                      </button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="overlay-bg bg-dark bg-opacity-75"></div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
   </body>
