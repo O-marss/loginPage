@@ -7,7 +7,6 @@ let loginCard = document.getElementById('loginCard')
 
 
 
-
 function displaySignUpCard(event){
     event.preventDefault();
     event.stopPropagation();
@@ -17,6 +16,8 @@ function displaySignUpCard(event){
 
 
 function displayLoginCard(){
+    event.preventDefault();
+    event.stopPropagation();
     loginCard.classList.remove('d-none');
     createAccountCard.classList.add('d-none')
 }
