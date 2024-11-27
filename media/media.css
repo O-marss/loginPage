@@ -8,7 +8,7 @@
     }
 
     .create-header{
-      font-size: 42px;
+      font-size: 38px;
       margin-bottom: 20px;
   }
 
@@ -16,25 +16,40 @@
     font-size: 16px;
 }
 
-a.signature{
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #ffffffc2;
-    z-index: 99;
-    text-decoration: none;
-    padding: 25px;
-    font-family: "Plaster", system-ui;
-    font-size: 30px;
-    cursor: pointer;
+#displayLogin{
+  font-size: 14px;
 }
-  
+#displaySignUp{
+  font-size: 14px;
+}
+
+.terms{
+  font-size: 14px;
+}
+
+a.signature{
+    padding: 25px;
+    font-size: 30px;
+}
+
+#carouselExampleIndicators{
+  margin-top: 0.9375rem;
+}
+
   }
 
 
   @media (min-width: 992px) {
-    
+    .create-header{
+      font-size: 42px;
+      margin-bottom: 20px;
+  }
   
+  #carouselExampleIndicators{
+    margin-top: 0;
+  }
+
+    
 }
 
   @media (min-width: 1200px) {
