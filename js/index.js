@@ -34,11 +34,14 @@ let usersList = [];
 // ^====================> Event ======================
 displaySignUp.addEventListener("click", function (e) {
   displaySignUpCard();
+  resetlogIn()
   e.preventDefault();
 });
 
 displayLogin.addEventListener("click", function (e) {
   displayLoginCard();
+  resetSignUp()
+  e.preventDefault();
 });
 
 if (localStorage.getItem("Users") !== null) {
@@ -169,4 +172,20 @@ function login() {
     loginHelp.classList.remove("d-none");
     loginHelp.classList.add("d-block");
   }
+}
+
+function resetSignUp(){
+  signUpForm.classList.remove('was-validated')
+  firstNameInput.value = null; 
+  lastNameInput.value = null; 
+  signUpEmailInput.value = null; 
+  signUpPasswordInput.value = null; 
+}
+
+function resetlogIn(){
+  logInEmailInput.classList.remove('is-valid')
+  logInEmailInput.classList.remove('is-invalid')
+  loginHelp.classList.add('d-none')
+  logInEmailInput.value = null; 
+  logInPasswordInput.value = null; 
 }
