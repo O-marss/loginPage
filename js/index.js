@@ -29,6 +29,8 @@ let loginHelp = document.getElementById("loginHelp");
 let signature = document.querySelector(".signature");
 signature.innerText = signature.innerText.split("").join("\n");
 
+
+
 let usersList = [];
 
 // ^====================> Event ======================
@@ -86,7 +88,7 @@ loginBtn.addEventListener("keyup", function (e) {
   e.stopPropagation();
 });
 
-// &=========================> Function =======================
+// &=========================> Login and Signup Functions =======================
 function validate(ele) {
   if (!ele.checkValidity()) {
     ele.classList.remove("is-valid");
@@ -188,4 +190,38 @@ function resetlogIn(){
   loginHelp.classList.add('d-none')
   logInEmailInput.value = null; 
   logInPasswordInput.value = null; 
+}
+
+
+// !=========================> Movies Generator Variables =======================
+let navLoginBtn = document.getElementById('navLoginBtn');
+let navRegisterBtn = document.getElementById('navRegisterBtn');
+
+// &=========================> Movies Generator Functions =======================
+let moviesList = []
+
+let movies = {
+  movie1:{
+    name:"Schindler's List",
+    date:"1993",
+    bg:"R",
+    duration:"3h 15m",
+    desc:"In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+    director:"Steven Spielberg",
+    writers:["Thomas Keneally","Steven Zaillian"],
+    stars:["Liam Neeson" , "Ralph Fiennes" ,"Ben Kingsley"],
+    link: "https://www.imdb.com/title/tt0108052/"
+  },
+
+  movie2:{
+    name:"The Godfather",
+    date:"1972",
+    bg:"R",
+    duration:"2h 55m",
+    desc:"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    director:"Francis Ford Coppola",
+    writers:["Mario Puzo" , "Francis Ford Coppola"],
+    stars:["Marlon Brando" , "Al Pacino", "James Caan"],
+    link: "https://www.imdb.com/title/tt0068646/"
+  }
 }

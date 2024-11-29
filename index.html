@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +34,7 @@
     <link rel="stylesheet" href="media/media.css" />
   </head>
   <body>
-    <div class="page-container py-5">
+    <div class="login-container py-5 d-none">
       <div id="cardContainer" class="card-container container rounded-3 shadow">
         <div class="row p-4 gy-4 gy-md-0">
           <div class="col-md-6 position-relative">
@@ -265,7 +276,96 @@
         </div>
       </div>
     </div>
-    <div id="overlayBg" class="overlay-bg bg-dark bg-opacity-75"></div>
+    <header class="fixed-top">
+      <nav id="navbar" class="navbar navbar-expand-lg shadow rounded-bottom-3 mx-auto">
+        <div id="navbarContainer" class="container">
+          <a id="logo" class="navbar-brand ps-1" href="#">WatchWise</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-3 pe-1">
+              <li class="nav-item">
+                <a
+                  id="navRegisterBtn"
+                  class="nav-link active rounded-2 px-3"
+                  aria-current="page"
+                  href="#"
+                  >Register</a
+                >
+              </li>
+              <li class="nav-item">
+                <a id="navLoginBtn" class="nav-link rounded-2 px-3" href="#"
+                  ><span id="navLoginBtnSpan">Login</span></a
+                >
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="d-flex align-items-center justify-content-center py-5">
+      
+
+      <section>
+        <div class="container py-5 px-3">
+          <div class="row gy-5">
+            <div class="col-12 text-center align-items-center">
+              <h1 id="mainHeading">Movie Picker</h1>
+            </div>
+            <div class="col-12">
+              <div class="card mb-3 mx-auto" style="max-width: 800px">
+                <div class="row g-0">
+                  <div class="col-md-5">
+                    <img
+                      id="cardImg"
+                      src="images/download.jpg"
+                      class="img-fluid w-100 rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h2 id="movieName" class="h5 card-title">Schindler's List</h2>
+                      <ul id="moviePresentation" class="h6 list-unstyled d-flex">
+                        <li id="movieYear">1993 -</li>
+                        <li id="moviePg" class="ms-2">R -</li>
+                        <li id="movieDuration" class="ms-2">3h 15m</li>
+                        </ul>
+                      <p id="movieDesc" class="card-text pt-2">
+                        In German-occupied Poland during World War II,
+                        industrialist Oskar Schindler gradually becomes
+                        concerned for his Jewish workforce after witnessing
+                        their persecution by the Nazis.
+                      </p>
+                      <p class="card-text d-flex gap-3">
+                        <span class="movie-creators">Director</span><span id="directorName" class="creators-name">Name</span>
+                      </p>
+
+                      <p class="card-text d-flex gap-3">
+                        <span class="movie-creators">Writers</span><span id="writersName" class="creators-name">Name</span>
+                      </p>
+
+                      <p class="card-text d-flex gap-3">
+                        <span class="movie-creators">Stars</span><span id="starsName" class="creators-name">Name</span>
+                      </p>
+
+                      <p class="card-text d-flex gap-3">
+                        <span class="movie-creators">IMDB</span><span id="imdbLink" class="creators-name">Link</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <button class="btn btn-lg btn-danger mx-auto">Recommend Me</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+   
+    <div id="overlayBg" class="overlay-bg bg-dark bg-opacity-75 d-none"></div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
   </body>
