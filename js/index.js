@@ -1,5 +1,5 @@
 //!
-let cardContainer = document.getElementById("cardContainer");
+let loginContianer = document.getElementById("loginContianer");
 let overlayBg = document.getElementById("overlayBg");
 
 let displaySignUp = document.getElementById("displaySignUp");
@@ -26,10 +26,13 @@ let existsMsg = document.getElementById("existsMsg");
 
 let loginHelp = document.getElementById("loginHelp");
 
-let signature = document.querySelector(".signature");
-signature.innerText = signature.innerText.split("").join("\n");
+let navLoginBtn = document.getElementById('navLoginBtn');
+let navRegisterBtn = document.getElementById('navRegisterBtn');
 
+let navLogOutBtn = document.getElementById('navLogOutBtn');
 
+let navUserNameSpan = document.getElementById('navUserNameSpan');
+let navUserName = document.getElementById('navUserName');
 
 let usersList = [];
 
@@ -87,6 +90,11 @@ loginBtn.addEventListener("keyup", function (e) {
   e.preventDefault();
   e.stopPropagation();
 });
+
+navLoginBtn.addEventListener('click', logInFromNav);
+navRegisterBtn.addEventListener('click', signUpFromNav);
+
+navLogOutBtn.addEventListener('click', logOut);
 
 // &=========================> Login and Signup Functions =======================
 function validate(ele) {
@@ -165,9 +173,13 @@ function login() {
       user.password === usersList[i].password
     ) {
       loginCheck = true;
-      console.log("ok");
-      cardContainer.classList.add("d-none");
+      navUserNameSpan.innerHTML = usersList[i].firstName
+      loginContianer.classList.add("d-none");
       overlayBg.classList.add("d-none");
+      navLoginBtn.classList.add('d-none');
+      navRegisterBtn.classList.add('d-none');
+      navLogOutBtn.classList.remove('d-none');
+      navUserName.classList.remove('d-none');
     }
   }
   if (!loginCheck) {
@@ -192,10 +204,31 @@ function resetlogIn(){
   logInPasswordInput.value = null; 
 }
 
+function logInFromNav(){
+  overlayBg.classList.remove('d-none');
+  loginContianer.classList.remove('d-none');
+}
+
+function signUpFromNav(){
+  overlayBg.classList.remove('d-none');
+  loginContianer.classList.remove('d-none')
+  loginCard.classList.add('d-none')
+  createAccountCard.classList.remove('d-none')
+}
+
+function logOut(){
+  loginContianer.classList.remove('d-none');
+  overlayBg.classList.remove('d-none');
+  navLogOutBtn.classList.add('d-none');
+  navLoginBtn.classList.remove('d-none');
+  navRegisterBtn.classList.remove('d-none');
+  navUserName.classList.add('d-none');
+  resetlogIn()
+}
+
 
 // !=========================> Movies Generator Variables =======================
-let navLoginBtn = document.getElementById('navLoginBtn');
-let navRegisterBtn = document.getElementById('navRegisterBtn');
+
 
 // &=========================> Movies Generator Functions =======================
 let moviesList = []

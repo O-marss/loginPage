@@ -4,21 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
-
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plaster&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
       rel="stylesheet"
     />
 
@@ -34,12 +30,11 @@
     <link rel="stylesheet" href="media/media.css" />
   </head>
   <body>
-    <div class="login-container py-5 d-none">
-      <div id="cardContainer" class="card-container container rounded-3 shadow">
-        <div class="row p-4 gy-4 gy-md-0">
-          <div class="col-md-6 position-relative">
+    <div id="loginContianer" class="login-container py-5 d-none">
+      <div class="container p-5">
+        <div class="row p-3 p-sm-5 gy-4 gy-md-0 card-container rounded-3 shadow">
+          <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center">
             <div class="card-imgs">
-              <a class="signature" href="https://github.com/">O|MARS</a>
               <div
                 id="carouselExampleIndicators"
                 class="carousel slide"
@@ -68,24 +63,24 @@
                   ></button>
                 </div>
                 <div class="carousel-inner rounded-3">
-                  <div class="carousel-item active">
+                  <div class="carousel-item active text-center">
                     <img
-                      src="images/slide9.webp"
-                      class="d-block w-100 rounded-3"
+                      src="images/download (3).jpg"
+                      class="rounded-3 img-fluid"
                       alt="..."
                     />
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item text-center">
                     <img
-                      src="images/slide4.webp"
-                      class="d-block w-100 rounded-3"
+                      src="images/The Wolf of Wall Street.jpg"
+                      class="rounded-3 img-fluid"
                       alt="..."
                     />
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item text-center">
                     <img
-                      src="images/slide2.webp"
-                      class="d-block w-100 rounded-3"
+                      src="images/download (5).jpg"
+                      class="rounded-3 img-fluid"
                       alt="..."
                     />
                   </div>
@@ -95,9 +90,9 @@
           </div>
           <div
             id="createAccountCard"
-            class="col-md-6 d-flex align-items-center d-none"
+            class="col-md-12 col-lg-7 d-flex align-items-center d-none"
           >
-            <div class="text-light p-md-3 p-xl-5">
+            <div class="text-light">
               <h1 class="create-header">Get Started</h1>
               <div class="d-flex gap-2 mb-md-3">
                 <p class="account-question">Already have an account?</p>
@@ -178,7 +173,8 @@
                         required
                       />
                       <label class="form-check-label" for="flexCheckDefault">
-                        I agree to the <a class="terms">Terms & Conditions</a>
+                        I agree to the
+                        <a class="terms">Terms & Conditions</a>
                       </label>
                     </div>
                   </div>
@@ -203,8 +199,8 @@
               </form>
             </div>
           </div>
-          <div id="loginCard" class="col-md-6 d-flex align-items-center">
-            <div class="text-light p-md-3 p-xl-5">
+          <div id="loginCard" class="col-md-12 col-lg-7 d-flex align-items-center">
+            <div class="text-light">
               <h1 class="create-header">Welcome Back!</h1>
               <div class="d-flex gap-2 mb-md-3">
                 <p class="account-question">Don't have an account?</p>
@@ -277,35 +273,59 @@
       </div>
     </div>
     <header class="fixed-top">
-      <nav id="navbar" class="navbar navbar-expand-lg shadow rounded-bottom-3 mx-auto">
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg shadow rounded-bottom-3 mx-auto"
+      >
         <div id="navbarContainer" class="container">
           <a id="logo" class="navbar-brand ps-1" href="#">WatchWise</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav gap-3 pe-1">
-              <li class="nav-item">
+              <li id="navRegisterBtn" class="nav-item rounded-2 px-3">
                 <a
-                  id="navRegisterBtn"
-                  class="nav-link active rounded-2 px-3"
+                  class="nav-link active "
                   aria-current="page"
                   href="#"
                   >Register</a
                 >
               </li>
-              <li class="nav-item">
-                <a id="navLoginBtn" class="nav-link rounded-2 px-3" href="#"
+              <li id="navLoginBtn"  class="nav-item rounded-2 px-3">
+                <a class="nav-link" href="#"
                   ><span id="navLoginBtnSpan">Login</span></a
                 >
               </li>
+
+              <li id="navUserName"  class="nav-item rounded-2 px-3 d-none">
+                <a class="nav-link" href="#"
+                  ><span id="navUserNameSpan" class="text-capitalize"></span></a
+                >
+              </li>
+
+              <li id="navLogOutBtn"  class="nav-item rounded-2 px-3 d-none">
+                <a class="nav-link" href="#"
+                  ><span id="navLogOutBtnSpan">Logout</span></a
+                >
+              </li>
             </ul>
+          </div>
         </div>
       </nav>
     </header>
     <main class="d-flex align-items-center justify-content-center py-5">
-      
-
       <section>
         <div class="container py-5 px-3">
           <div class="row gy-5">
@@ -318,19 +338,24 @@
                   <div class="col-md-5">
                     <img
                       id="cardImg"
-                      src="images/download.jpg"
+                      src="images/movie1.jpg"
                       class="img-fluid w-100 rounded-start"
                       alt="..."
                     />
                   </div>
                   <div class="col-md-7">
                     <div class="card-body">
-                      <h2 id="movieName" class="h5 card-title">Schindler's List</h2>
-                      <ul id="moviePresentation" class="h6 list-unstyled d-flex">
+                      <h2 id="movieName" class="h5 card-title">
+                        Schindler's List
+                      </h2>
+                      <ul
+                        id="moviePresentation"
+                        class="h6 list-unstyled d-flex"
+                      >
                         <li id="movieYear">1993 -</li>
                         <li id="moviePg" class="ms-2">R -</li>
                         <li id="movieDuration" class="ms-2">3h 15m</li>
-                        </ul>
+                      </ul>
                       <p id="movieDesc" class="card-text pt-2">
                         In German-occupied Poland during World War II,
                         industrialist Oskar Schindler gradually becomes
@@ -338,19 +363,27 @@
                         their persecution by the Nazis.
                       </p>
                       <p class="card-text d-flex gap-3">
-                        <span class="movie-creators">Director</span><span id="directorName" class="creators-name">Name</span>
+                        <span class="movie-creators">Director</span
+                        ><span id="directorName" class="creators-name"
+                          >Name</span
+                        >
                       </p>
 
                       <p class="card-text d-flex gap-3">
-                        <span class="movie-creators">Writers</span><span id="writersName" class="creators-name">Name</span>
+                        <span class="movie-creators">Writers</span
+                        ><span id="writersName" class="creators-name"
+                          >Name</span
+                        >
                       </p>
 
                       <p class="card-text d-flex gap-3">
-                        <span class="movie-creators">Stars</span><span id="starsName" class="creators-name">Name</span>
+                        <span class="movie-creators">Stars</span
+                        ><span id="starsName" class="creators-name">Name</span>
                       </p>
 
                       <p class="card-text d-flex gap-3">
-                        <span class="movie-creators">IMDB</span><span id="imdbLink" class="creators-name">Link</span>
+                        <span class="movie-creators">IMDB</span
+                        ><span id="imdbLink" class="creators-name">Link</span>
                       </p>
                     </div>
                   </div>
@@ -358,13 +391,15 @@
               </div>
             </div>
             <div class="col-12 text-center">
-              <button class="btn btn-lg btn-danger mx-auto">Recommend Me</button>
+              <button class="btn btn-lg btn-danger mx-auto">
+                Recommend Me
+              </button>
             </div>
           </div>
         </div>
       </section>
     </main>
-   
+
     <div id="overlayBg" class="overlay-bg bg-dark bg-opacity-75 d-none"></div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>

@@ -2,6 +2,10 @@
 }
 
 @media (min-width: 768px) {
+  .card-container{
+    width: 100%;
+    margin-inline: auto;
+  }
 }
 
 @media (min-width: 992px) {
@@ -12,13 +16,15 @@
     margin-top: 0;
     flex-direction: row;
   }
-
   #logo{
-
     font-size: 30px;
-    
+  }
+  .card-container{
+    width: 75%;
+    margin-inline: auto;
   }
 }
 
 @media (min-width: 1200px) {
+
 }

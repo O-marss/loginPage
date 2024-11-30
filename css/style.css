@@ -1,8 +1,9 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: #1a1a1d;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 0;
   padding: 0;
 }
@@ -20,8 +21,24 @@ h6 {
 a:visited,
 a:active,
 a {
+  color: inherit;
+}
+
+form
+a:visited,
+a:active,
+a {
   color: #525ceb;
 }
+
+#displayLogin{
+  color: #525ceb;
+}
+
+#displaySignUp{
+  color: #525ceb;
+}
+
  main{
   min-height: 100vh;
  }
@@ -58,23 +75,42 @@ a {
 
 #navLoginBtn{
   color: #000;
-  background-color: #C3E2C2;
+  background-color: #FCFAEE;
   text-align: center;
 }
 
 #navRegisterBtn{
-  color: #000;
-  background-color: #EAD196;
+  color: #fff;
+  background-color: #507687;
   text-align: center;
 }
 
 #navLoginBtn:hover{
-  background-color: #ccbcaa;
+  background-color: #1a1a1d;
+  color: #ccbcaa;
+}
+
+#navLoginBtn:hover a{
+  color: #ccbcaa;
 }
 
 #navRegisterBtn:hover{
-  background-color: #c4a46a;
+  background-color: #fff;
+  color: #507687;
+}
 
+#navUserName{
+  color: #ccbcaa;
+  background-color: #1a1a1d;
+}
+
+#navLogOutBtn{
+  color: #fff;
+  background-color: #507687;
+}
+
+#navUserName:hover a{
+color: #ccbcaa ;
 }
 
 #mainHeading {
@@ -84,28 +120,23 @@ a {
 }
 
 .login-container {
-  min-height: 100vh;
+  height: 50% ;  
   display: flex;
   align-items: center;
   position: fixed;
   top: 0;
-  bottom: 0;
   right: 0;
   left: 0;
+  transform: translateY(50%)!important;
   z-index: 99999;
 }
 
 .card-container {
-  background-color: #1a1a1d;
-  width: 85%;
-}
-
-.card-container .row .card-imgs img {
-  width: 100%;
+  background-color: #000;
 }
 
 .create-header {
-  font-size: 1.75rem;
+  font-size: 1.6875rem;
 }
 
 .form-control {
@@ -137,7 +168,7 @@ a {
 }
 
 .form-check-label {
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 
 .form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
@@ -169,7 +200,7 @@ a {
 
 .terms {
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 #successMsg{
@@ -242,9 +273,7 @@ a.signature:focus {
 }
 
 .creators-name{
-
   color: #5B99C2;
-
 }
 
 .movie-creators{
